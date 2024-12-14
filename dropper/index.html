@@ -1,0 +1,122 @@
+<script>
+
+//Hashing code
+
+    function hashCodePhysio() {
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789त्रधभचतथगषयउृेबुसकिपमवाजनदशफहलअ,।रज्ञघङझछटठडढणढणब्श्ब्क्म्ँन्ज्व्प्ीस्श्ह्ऋख्द्ल्ः?श्रश्रश्ररूस्र्ूरूैर्एइक्षग्थ्त्च्भ्ध्ोध्भ्च्त्थ्ग्क्ष';
+        let hash = '';
+        for (let i = 0; i < 92; i++) {
+            const randomIndex = Math.floor(Math.random() * chars.length);
+            hash += chars[randomIndex];
+        }
+        return hash;
+    }
+
+//More hash Generation 
+
+
+    function finalHashPhysio() {
+        const hash = hashCodePhysio();
+        const take = Math.random().toString(36).substring(2, 10);
+        return final = hash + take;
+
+    }
+
+
+// Getting URL  Parameters
+    const url = new URLSearchParams(window.location.search);
+    const finalHash = finalHashPhysio(); // Calling Final Hash
+
+
+
+//Middleware Protection
+
+    function middleware() {
+        let yes = 1;
+        if (url.has('id')) {
+            return yes;
+
+        } else {
+            window.location.href = `../pages/404.html?indexPeneteratedTakeAction?ip=${finalHash}`;
+            return null;
+        }
+    }
+    if (middleware()) {
+        console.log(finalHashPhysio());
+    }
+
+
+    for (const [key, value] of url.entries()) {
+        if (
+            value === 'assessmentMuscoOrth' ||
+            value === 'treatTabSpanMuscoOrth' ||
+            value === 'manualToolsMuscoOrth' ||
+            value === 'exerciseEquipMuscoOrtho' ||
+            value === 'tracSpiDecomMuscoOrtho' ||
+            value === 'SpanMaterBraceMuscoOrtho' ||
+            value === 'BalanceCoordNeuro' ||
+            value === 'gaitMobilTrainNeuro' ||
+            value === 'assesmentNeuro' ||
+            value === 'sensorIntegNeuro' ||
+            value === 'musculeTrainNeuro' ||
+            value === 'monitorCardioRespi' ||
+            value === 'exerciseCardioRespi' ||
+            value === 'respiEquipCardioRespi' ||
+            value === 'assesmentCardioRespi' ||
+            value === 'developMotorSkillPediatric' ||
+            value === 'sensorPediatric' ||
+            value === 'mobilEquipPediatric' ||
+            value === 'assesmantPediatric' ||
+            value === 'assesmentSports' ||
+            value === 'trainRehabSports' ||
+            value === 'recovPrevSports' ||
+            value === 'pelvicEquipWomenH' ||
+            value === 'pregPostNatalWomenH' ||
+            value === 'treatAssesmentWomenH' ||
+            value === 'respiEquipCriticIcu' ||
+            value === 'mobilEquipCriticIcu' ||
+            value === 'monitorCriticIcu' ||
+            value === 'positioningCriticIcu' ||
+            value === 'electroTheraSpecial' ||
+            value === 'aquaticTheraSpecial' ||
+            value === 'documentEduSpecial' ||
+            value === 'infectContSafeSpecial' ||
+            value === 'workInjurPrevManageOccup' ||
+            value === 'ergonoAssesAdvOccup' ||
+            value === 'RtwPrgOccup' ||
+            value === 'manualHandgTrainOccup' ||
+            value === 'WorkAssesOccup' ||
+            value === 'treatBalanDisoVesti' ||
+            value === 'vertiManageVesti' ||
+            value === 'innEarCondVesti' ||
+            value === 'dizAssTreatVesti' ||
+            value === 'hotManual' ||
+            value === 'joinMobilManipManual' ||
+            value === 'sofTissTechqManual' ||
+            value === 'myofasRelsManual' ||
+            value === 'spinManipManual' ||
+            value === 'canRelRehabOnco' ||
+            value === 'posSurgiRecovOnco' ||
+            value === 'lypdemaManageOnco' ||
+            value === 'panManageOnco' ||
+            value === 'exerPrgOnco' ||
+            value === 'treatBunBurnNWounCare' ||
+            value === 'wounHealBunNWouncare' ||
+            value === 'skrManageBunNWounCare' ||
+            value === 'rngMotonMainBunNWounCare' ||
+            value === 'CompreTheraBunNWounCare' ||
+            value === 'agngConGeria' ||
+            value === 'balanNFalPrevGeria' ||
+            value === 'osteoManagGeria' ||
+            value === 'agRelMobilIssueGeria' ||
+            value === 'arthtisManageGeria'
+
+        ) {
+            window.location.href = `ren.html?${key}=${value}`;
+        } else {
+            window.location.href = `../pages/404.html?indexPeneteratedTakeAction?ip=${finalHash}`;
+        }
+
+
+    }
+</script>
