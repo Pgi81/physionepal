@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Physio Nepal - Wholesale Physiotherapy & Autism Equipment Supplier</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <!-- Dynamically Injected Meta Tags -->
+  <script>
+    (function () {
+      const metaTags = [
+        { name: "description", content: "Nepal's leading wholesale supplier of high-quality physiotherapy equipment and autism therapy products." },
+        { name: "keywords", content: "physiotherapy equipment nepal, autism therapy equipment, medical supplies wholesale, physical therapy equipment, rehabilitation supplies, therapy tools nepal, medical device wholesaler, occupational therapy equipment, sensory integration tools, rehabilitation equipment nepal" },
+        { name: "author", content: "Physio Nepal" },
+        { name: "robots", content: "index, follow" },
+        { property: "og:title", content: "Physio Nepal - Wholesale Physiotherapy & Autism Equipment" },
+        { property: "og:description", content: "Premium wholesale supplier of physiotherapy and autism therapy equipment in Nepal. Quality medical devices and therapeutic tools for healthcare professionals." },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://www.physionepal.com" },
+        { property: "og:image", content: "https://www.physionepal.com/images/og-image.jpg" },
+        { name: "format-detection", content: "telephone=no" },
+        { name: "mobile-web-app-capable", content: "yes" },
+        { name: "theme-color", content: "#4A90E2" }
+      ];
+
+      metaTags.forEach(tag => {
+        const meta = document.createElement("meta");
+        Object.keys(tag).forEach(attr => meta.setAttribute(attr, tag[attr]));
+        document.head.appendChild(meta);
+      });
+    })();
+  </script>
+
+  <!-- Dynamically Injected Stylesheets -->
+  <script>
+    (function () {
+      const stylesheets = [
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css",
+        "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css",
+        "css/vendor.css",
+        "style.css",
+        "3d/css/style.css"
+      ];
+
+      stylesheets.forEach(href => {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = href;
+        document.head.appendChild(link);
+      });
+
+      const preload = document.createElement("link");
+      preload.rel = "preload";
+      preload.as = "image";
+      preload.href = "https://lh3.googleusercontent.com/a-/ALV-UjVbRebQw-IZNnpjSjPtuqThUVak_ag0Q6dqVtaZ2WL44FD-8hI=s100-p-k-no-mo";
+      document.head.appendChild(preload);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png"
+    href="https://lh3.googleusercontent.com/a-/ALV-UjVbRebQw-IZNnpjSjPtuqThUVak_ag0Q6dqVtaZ2WL44FD-8hI=s100-p-k-no-mo">
+  <link rel="apple-touch-icon"
+    href="https://lh3.googleusercontent.com/a-/ALV-UjVbRebQw-IZNnpjSjPtuqThUVak_ag0Q6dqVtaZ2WL44FD-8hI=s100-p-k-no-mo">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Physio Nepal",
+      "url": "https://www.physionepal.com",
+      "logo": "https://lh3.googleusercontent.com/a-/ALV-UjVbRebQw-IZNnpjSjPtuqThUVak_ag0Q6dqVtaZ2WL44FD-8hI=s100-p-k-no-mo",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+977-9801234567",
+        "contactType": "Customer Service"
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.physionepal.com" },
+        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.physionepal.com/products" }
+      ]
+    }
+  </script>
+
+  <!-- Custom CSS for Top Bar -->
+  <style>
+    .top-bar {
+      background-color: #1cbbe2;
+      color: white;
+      font-size: 14px;
+      padding: 5px 15px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Date and Time -->
+        <div class="col-md-6 col-sm-6 text-start" id="date"></div>
+        <div class="col-md-6 col-sm-6 text-center" id="time-day"></div>
+      </div>
+      <div class="row align-items-center">
+        <!-- Language Selector and Social Media -->
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <!-- Language Selector -->
+          <div class="dropdown me-3">
+            <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="languageDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language Selector">
+              ENG
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">ENG</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('ne')">NEP</a></li>
+            </ul>
+          </div>
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SVG Icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+      <symbol id="link" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 1 1 1 1Z" />
+      </symbol>
+      <symbol id="cart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader"></div>
+  </div>
+
+  <!-- Offcanvas Cart -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
+    aria-labelledby="cartLabel">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill" id="cart-count">3</span>
+        </h4>
+        <ul class="list-group mb-3" id="cart-items">
+          <!-- Dynamic Cart Items -->
+        </ul>
+        <div class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong id="cart-total">$20</strong>
+        </div>
+        <button class="w-100 btn btn-primary btn-lg" id="checkout-btn">Continue to checkout</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"
+    aria-labelledby="Search">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Search</span>
+        </h4>
+        <form role="search" action="index.html" method="get" class="d-flex mt-3 gap-0">
+          <input class="form-control rounded-start rounded-0 bg-light" type="email"
+            placeholder="What are you looking for?" aria-label="What are you looking for?">
+          <button class="btn btn-dark rounded-end rounded-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row py-3 border-bottom">
+
+        <!-- Logo Section -->
+        <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+          <div class="main-logo">
+            <a href="index.html">
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjVbRebQw-IZNnpjSjPtuqThUVak_ag0Q6dqVtaZ2WL44FD-8hI=s100-p-k-no-mo"
+                alt="logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <!-- Search Bar Section -->
+        <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+          <div class="search-bar row bg-light p-2 my-2 rounded-4">
+            <!-- Category Dropdown -->
+            <div class="col-md-4 d-none d-md-block">
+              <select class="form-select border-0 bg-transparent" id="category-select">
+                <option>All Categories</option>
+                <option>Basic Setup</option>
+                <option>Advance Setup</option>
+                <option>Orthopedic Physiotherapy</option>
+                <option>Sports Physiotherapy</option>
+                <option>Pediatric Physiotherapy</option>
+                <option>Neurological Physiotherapy</option>
+                <option>Sensory Products for Autism</option>
+                <option>Electrotherapy</option>
+                <option>Rehabilitation</option>
+                <option>acupuncture</option>
+                <option>Naturopathy</option>
+              </select>
+            </div>
+            <!-- Search Input -->
+            <div class="col-11 col-md-7">
+              <form id="search-form" class="text-center" action="index.html" method="post">
+                <input type="text" class="form-control border-0 bg-transparent"
+                  placeholder="Search for more than 20,000 products" />
+              </form>
+            </div>
+            <!-- Search Icon -->
+            <div class="col-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Support and Icons Section -->
+        <div
+          class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+          <!-- Support Section -->
+          <div class="support-box text-end d-none d-xl-block">
+            <span class="fs-6 text-muted">For Support?</span>
+            <h5 class="mb-0" style="font-size: 12px;">+977 - 9709991999</h5>
+          </div>
+
+          <!-- User, Wishlist, and Cart Icons -->
+          <ul class="d-flex justify-content-end list-unstyled m-0">
+            <li>
+              <a href="#" class="rounded-circle bg-light p-2 mx-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="7" r="4"></circle>
+                  <path d="M5.5 21a6.5 6.5 0 0 1 13 0"></path>
+                </svg>
+
+              </a>
+            </li>
+            <li>
+              <a href="#" class="rounded-circle bg-light p-2 mx-1">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="d-lg-none">
+              <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="d-lg-none">
+              <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Cart Section for Large Screens -->
+          <div class="cart text-end d-none d-lg-block dropdown">
+            <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+              <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
+              <span class="cart-total fs-5 fw-bold" id="cart-total">$1290.00</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!---====================== Navigation And Block =============================-->
+    <!-- <div class="container-fluid">
+      <div class="row py-3">
+        <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
+          <nav class="main-menu d-flex navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header justify-content-center">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="filter-categories custom-select">
+                   Custom Select Button -->
+    <!-- <button class="custom-select-btn">Select an Option</button> -->
+    <!-- Custom Options (Dropdown) -->
+    <!-- <div class="custom-options" style="display: none;" id="custom-options-container"></div> -->
+    <!-- </div>
+              </div>
+              <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div> -->
+  </header>
+
+
+  <!-- Advertisement Banner -->
+  <div class="advertisement" id="advertisement">
+    <div class="banner" id="banner">
+      <button class="close-btn" id="close-btn" aria-label="Close Advertisement">&times;</button>
+      <div class="advername" id="advername">Exclusive Offer!</div>
+      <div class="offer" id="offer">50% OFF on All Products</div>
+      <div class="countdown" id="countdown"></div>
+    </div>
+  </div>
+
+  <!--====Starter section with image and text====-->
+  <div class="content-container section">
+    <div class="img-container">
+      <a href="#" onClick="document.getElementById('modal-wrapper').style.display='block'"><img
+          src="https://rukminim1.flixcart.com/image/860/860/xif0q/ultrasound-machine/n/6/u/4-ultrasound-therapy-ultrasonic-physiotherapy-advanced-model-original-imagxhgbnywzkshz.jpeg?q=70&crop=false"></a>
+    </div>
+    <div class="text-container">
+      <h1>
+        <font color="#ff0004">Ultrasonic</font> Therapy Machine Physiotherapy Equipment
+      </h1>
+      <p>Portable/stationary, 1-3 MHz, 0.1-3 W/cm², LCD controls, enhances healing, reduces pain, relaxes muscles,
+        softens scars.</p>
+      <a href="#" class="price">$18200</a>
+    </div>
+  </div>
+  <!--3d modal-->
+  <div id="modal-wrapper" class="modal">
+    <div class="center">
+      <span onClick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times; </span>
+      <div class="rotation">
+        <div class="image-container" id="overlayHolder">
+          <img src="imag/3d/1.jpg"
+            alt="The Ultrasound Therapy Machine effectively reduces muscle and joint pain by targeting deep tissue with therapeutic sound waves. Ultrasound Therapy Machine: Delivers precise ultrasonic waves for effective deep tissue treatment.">
+          <p id="overlaytext" class="overlay-text">Hold Click & Scroll to See More</p>
+        </div>
+        <img src="imag/3d/2.jpg"
+          alt="Ultrasound Therapy Machine: Promotes faster recovery by enhancing blood circulation and reducing inflammation.">
+        <img src="imag/3d/3.jpg"
+          alt="Ultrasound Therapy Machine: Compact and lightweight design for easy portability in clinics or home use.">
+        <img src="imag/3d/4.jpg"
+          alt="Ultrasound Therapy Machine: Features user-friendly controls for seamless operation by professionals and patients.">
+        <img src="imag/3d/5.jpg"
+          alt="Ultrasound Therapy Machine: Adjustable intensity settings to customize therapy for various conditions.">
+        <img src="imag/3d/6.jpg"
+          alt="Ultrasound Therapy Machine: Provides both continuous and pulsed wave modes for versatile therapeutic applications.">
+        <img src="imag/3d/7.jpg"
+          alt="Ultrasound Therapy Machine: Ideal for relieving chronic pain, muscle spasms, and joint stiffness.">
+        <img src="imag/3d/8.jpg"
+          alt="Ultrasound Therapy Machine: Enhances tissue repair by stimulating collagen production and cellular activity.">
+        <img src="imag/3d/9.jpg"
+          alt="Ultrasound Therapy Machine: FDA-approved device ensuring safety and reliability for physiotherapy treatments.">
+        <img src="imag/3d/10.jpg"
+          alt="Ultrasound Therapy Machine: Comes with ergonomic applicators for targeted and efficient treatment.">
+        <img src="imag/3d/11.jpg"
+          alt="Ultrasound Therapy Machine: Effective in breaking down scar tissue and adhesions for improved mobility.">
+        <img src="imag/3d/12.jpg"
+          alt="Ultrasound Therapy Machine: Helps in managing arthritis pain and other musculoskeletal conditions.">
+        <img src="imag/3d/13.jpg"
+          alt="Ultrasound Therapy Machine: Features digital display for monitoring treatment parameters easily.">
+        <img src="imag/3d/14.jpg"
+          alt="Ultrasound Therapy Machine: Built with advanced technology for consistent and accurate ultrasonic output.">
+        <img src="imag/3d/15.jpg"
+          alt="Ultrasound Therapy Machine: Supports quick warm-up sessions before physical therapy exercises, Durable and designed to withstand regular use in professional settings, Enhances medication absorption through phonophoresis for better outcomes, A trusted choice among physiotherapists for non-invasive and effective therapy.">
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("overlayHolder").addEventListener("click", function () {
+      document.getElementById("overlaytext").style.display = "none";
+    });
+  </script>
+
+
+  <!---=== Newly Arrived Brands Section ===-->
+  <style>
+    .section-title {
+      font-size: 80px;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+
+    .section-header:hover font {
+      color: #ff0004;
+      transition: all .4s ease-in-out;
+    }
+
+    .swiper-section .btn-link {
+      color: #00A651;
+    }
+  </style>
+  <section class="py-5 overflow-hidden section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header d-flex flex-wrap flex-wrap justify-content-between mb-5">
+            <h2 class="section-title">
+              <font color="#00A651">Newly </font>Arrived Brands
+            </h2>
+            <div class="d-flex align-items-center swiper-section">
+              <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+              <div class="swiper-buttons">
+                <button class="swiper-prev brand-carousel-prev btn btn-yellow">❮</button>
+                <button class="swiper-next brand-carousel-next btn btn-yellow">❯</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Swiper Container -->
+      <div class="swiper">
+        <div class="swiper-wrapper" id="product-swiper-wrapper"></div>
+        <!-- Add Pagination, Navigation, etc., if needed -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </div>
+  </section>
+
+  <!---=== Newly Arrived Brands Section Ends===-->
+
+
+  <!---=== Trending Products ===-->
+  <section class="py-5 section">
+    <div class="section-header d-flex flex-wrap flex-wrap justify-content-center mb-5">
+      <h2 class="section-title">
+        <font color="#00A651">Trending </font>Products
+      </h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bootstrap-tabs product-tabs">
+            <div class="tabs-header d-flex justify-content-between border-bottom my-5">
+              <nav>
+                <style>
+                  .product-tabs .nav-tabs {
+                    justify-content: center;
+                  }
+                </style>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a href="#" class="nav-link text-uppercase fs-6 active" id="nav-all-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-all">All</a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-electro-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-electro">Electrotherapy </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-exerRahb-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-exerRahb">Exercise and Rehabilitation </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-ttnF-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-ttnF">Treatment Tables and Furniture </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-manThera-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-manThera">Manual Therapy Tools </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-orthSupBres-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-orthSupBres">Orthopedic Supports and Braces </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-hcThera-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-hcThera">Heat and Cold Therapy </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-mobilAid-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-mobilAid">Mobility Aids </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-tracDecomEquip-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tracDecomEquip">Traction and Decompression </a>
+                  <a href="#" class="nav-link text-uppercase fs-6" id="nav-monitMeasur-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-monitMeasur">Monitoring and Measurement </a>
+
+                </div>
+              </nav>
+            </div>
+            <svg style="display: none;">
+              <symbol id="heart" viewBox="0 0 24 24">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </symbol>
+            </svg>
+
+
+
+
+
+            <!--===== Active Trending Products =====-->
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 allItems">
+                </div>
+              </div>
+              <!--===== Active Trending Products End =====-->
+
+
+              <!--_Electro Therapy Products-->
+              <div class="tab-pane fade" id="nav-electro" role="tabpanel" aria-labelledby="nav-electro-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 electro">
+                </div>
+              </div>
+              <!--_Electro Therapy Products End-->
+
+
+
+              <!--Exercise Rehabilitation Products-->
+              <div class="tab-pane fade" id="nav-exerRahb" role="tabpanel" aria-labelledby="nav-exerRahb-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 exerRehab">
+                </div>
+              </div>
+              <!--Exercise Rehabilitation Products End-->
+
+
+
+              <!--Treatment Tables & Furniture Products-->
+              <div class="tab-pane fade" id="nav-ttnF" role="tabpanel" aria-labelledby="nav-ttnF-tab">
+
+                <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 ttFPro">
+                </div>
+              </div>
+              <!--Treatment Tables & Furniture Products End-->
+
+
+
+              <!--Manual Therapy Tools-->
+              <div class="tab-pane fade" id="nav-manThera" role="tabpanel" aria-labelledby="nav-manThera-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 manThera">
+                </div>
+              </div>
+              <!--Manual Therapy Tools End-->
+
+
+
+              <!--Orthopedic Supports and Braces-->
+              <div class="tab-pane fade" id="nav-orthSupBres" role="tabpanel" aria-labelledby="nav-orthSupBres-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 orthoSupBra">
+                </div>
+              </div>
+              <!--Orthopedic Supports and Braces End-->
+
+
+              <!--Heat and Cold Therapy-->
+              <div class="tab-pane fade" id="nav-hcThera" role="tabpanel" aria-labelledby="nav-hcThera-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 hcTherapro">
+                </div>
+              </div>
+              <!--Heat and Cold Therapy End-->
+
+
+              <!-- Mobility Aids Therapy-->
+              <div class="tab-pane fade" id="nav-mobilAid" role="tabpanel" aria-labelledby="nav-mobilAid-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mobilAidpro">
+                </div>
+              </div>
+              <!-- Mobility Aids End-->
+
+
+              <!--Traction and Decompression Equipment-->
+              <div class="tab-pane fade" id="nav-tracDecomEquip" role="tabpanel"
+                aria-labelledby="nav-tracDecomEquip-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 tracDecomEquipPro">
+                </div>
+              </div>
+              <!--Traction and Decompression Equipment End-->
+
+
+              <!-- Monitoring and Measurement Tools-->
+              <div class="tab-pane fade" id="nav-monitMeasur" role="tabpanel" aria-labelledby="nav-monitMeasur-tab">
+                <div
+                  class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 monitMeasurPro">
+                </div>
+              </div>
+
+              <!-- Monitoring and Measurement Tools End-->
+
+              <style>
+                .btn-wishlist:hover .heart-icon path {
+                  fill: #ffffff;
+                }
+              </style>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    #contact input {
+      background: #d9e3e4;
+    }
+
+    .btn-primary {
+      background-color: #3fbbc0;
+    }
+  </style>
+  <!-- Header Section -->
+  <section id="contact" class="py-5 section">
+    <div class="section-header d-flex flex-wrap flex-wrap justify-content-center mb-5">
+      <h2 class="section-title">
+        <font color="#00A651">Contact </font>us
+      </h2>
+    </div>
+
+    <div class="container">
+      <form action="mailto:physionepal03@gmail.com" method="POST" enctype="text/plain" class="mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="firstName" class="text-dark">First Name:</label>
+            <input class="form-control mb-3 bg-grey text-dark border-light" type="text" id="firstName" name="firstName"
+              required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="text-dark">Last Name:</label>
+            <input class="form-control mb-3 bg-blue text-dark border-light" type="text" id="lastName" name="lastName">
+          </div>
+        </div>
+
+        <label for="email" class="text-dark">Email:</label>
+        <input class="form-control mb-3 bg-blue text-dark border-light" type="email" id="email" name="email" required>
+
+        <label for="contactNumber" class="text-dark">Contact Number:</label>
+        <input class="form-control mb-3 bg-blue text-dark border-light" type="tel" id="contactNumber"
+          name="contactNumber" required>
+
+        <label for="topic" class="text-dark">Choose Topic:</label>
+        <select id="topic" name="topic" class="form-control mb-3 bg-blue text-dark border-light" required>
+          <option value="">Select</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+
+        <input class="btn btn-primary w-25" type="submit" value="Submit" style="background-color: #3fbbc0;">
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="py-5 bg-dark text-light">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footer-menu">
+            <img
+              src="https://lh3.googleusercontent.com/a-/ALV-UjVbRebQw-IZNnpjSjPtuqThUVak_ag0Q6dqVtaZ2WL44FD-8hI=s100-p-k-no-mo"
+              alt="logo">
+            <div class="social-links mt-5">
+              <ul class="d-flex list-unstyled gap-2">
+                <li>
+                  <a href="#" class="btn btn-outline-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M1.04 17.52q.1-.16.32-.02a21.308 21.308 0 0 0 10.88 2.9a21.524 21.524 0 0 0 7.74-1.46q.1-.04.29-.12t.27-.12a.356.356 0 0 1 .47.12q.17.24-.11.44q-.36.26-.92.6a14.99 14.99 0 0 1-3.84 1.58A16.175 16.175 0 0 1 12 22a16.017 16.017 0 0 1-5.9-1.09a16.246 16.246 0 0 1-4.98-3.07a.273.273 0 0 1-.12-.2a.215.215 0 0 1 .04-.12Zm6.02-5.7a4.036 4.036 0 0 1 .68-2.36A4.197 4.197 0 0 1 9.6 7.98a10.063 10.063 0 0 1 2.66-.66q.54-.06 1.76-.16v-.34a3.562 3.562 0 0 0-.28-1.72a1.5 1.5 0 0 0-1.32-.6h-.16a2.189 2.189 0 0 0-1.14.42a1.64 1.64 0 0 0-.62 1a.508.508 0 0 1-.4.46L7.8 6.1q-.34-.08-.34-.36a.587.587 0 0 1 .02-.14a3.834 3.834 0 0 1 1.67-2.64A6.268 6.268 0 0 1 12.26 2h.5a5.054 5.054 0 0 1 3.56 1.18a3.81 3.81 0 0 1 .37.43a3.875 3.875 0 0 1 .27.41a2.098 2.098 0 0 1 .18.52q.08.34.12.47a2.856 2.856 0 0 1 .06.56q.02.43.02.51v4.84a2.868 2.868 0 0 0 .15.95a2.475 2.475 0 0 0 .29.62q.14.19.46.61a.599.599 0 0 1 .12.32a.346.346 0 0 1-.16.28q-1.66 1.44-1.8 1.56a.557.557 0 0 1-.58.04q-.28-.24-.49-.46t-.3-.32a4.466 4.466 0 0 1-.29-.39q-.2-.29-.28-.39a4.91 4.91 0 0 1-2.2 1.52a6.038 6.038 0 0 1-1.68.2a3.505 3.505 0 0 1-2.53-.95a3.553 3.553 0 0 1-.99-2.69Zm3.44-.4a1.895 1.895 0 0 0 .39 1.25a1.294 1.294 0 0 0 1.05.47a1.022 1.022 0 0 0 .17-.02a1.022 1.022 0 0 1 .15-.02a2.033 2.033 0 0 0 1.3-1.08a3.13 3.13 0 0 0 .33-.83a3.8 3.8 0 0 0 .12-.73q.01-.28.01-.92v-.5a7.287 7.287 0 0 0-1.76.16a2.144 2.144 0 0 0-1.76 2.22Zm8.4 6.44a.626.626 0 0 1 .12-.16a3.14 3.14 0 0 1 .96-.46a6.52 6.52 0 0 1 1.48-.22a1.195 1.195 0 0 1 .38.02q.9.08 1.08.3a.655.655 0 0 1 .08.36v.14a4.56 4.56 0 0 1-.38 1.65a3.84 3.84 0 0 1-1.06 1.53a.302.302 0 0 1-.18.08a.177.177 0 0 1-.08-.02q-.12-.06-.06-.22a7.632 7.632 0 0 0 .74-2.42a.513.513 0 0 0-.08-.32q-.2-.24-1.12-.24q-.34 0-.8.04q-.5.06-.92.12a.232.232 0 0 1-.16-.04a.065.065 0 0 1-.02-.08a.153.153 0 0 1 .02-.06Z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-menu">
+            <h5 class="widget-title">Ultras</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item"><a href="#" class="nav-link">About us</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">Terms & conditions</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">Products</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-menu">
+            <h5 class="widget-title">Ultras</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item"><a href="#" class="nav-link">Physio Nepal - Wholseller of Physio Products</a></li>
+              <li class="menu-item"><a href="https://maps.app.goo.gl/nNqEqzGmN4QGEyxQA" class="nav-link"
+                  target="_blank">Click for Location</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">+977 - 9709991999</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">Headquater - Gaindakot - 4</a></li>
+              <li class="menu-item"><a href="#" class="nav-link">Delivery Information</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-menu">
+            <h5 class="widget-title">Customer Service</h5>
+            <ul class="menu-list list-unstyled">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.016025367515!2d84.39726915856474!3d27.701720781220626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fbc671cee37f%3A0x4201c246d81ad357!2sphysio%20nepal%20supplier!5e0!3m2!1sen!2snp!4v1734180695352!5m2!1sen!2snp"
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div id="footer-bottom">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 copyright" style="display: flex;flex-direction: column;justify-content: center; align-items: center;">
+              <p>© 2025 PhysioNepal. All rights reserved.</p>
+              <p>Developed By <a href="https://pgi81.github.io/SamratThapa/" style="color: #ffffff;">Samrat Thapa</a>
+                Distributed by <a href="https://pgi81.github.io/nepo/" style="color: #ffffff;">Nepholic</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Dynamically Loaded Footer Scripts -->
+  <script>
+    (function () {
+      const scripts = [
+        { src: "js/jquery-1.11.0.min.js", integrity: "", crossorigin: "" },
+        { src: "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js", integrity: "", crossorigin: "" },
+        {
+          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js",
+          integrity: "sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe",
+          crossorigin: "anonymous"
+        },
+        { src: "3d/js/360deg.js", integrity: "", crossorigin: "" },
+        { src: "js/plugins.js", integrity: "", crossorigin: "" },
+        { src: "js/cartFunction.js", integrity: "", crossorigin: "" },
+        { src: "js/script.js", integrity: "", crossorigin: "" },
+        { src: "dropper/js/main.js", integrity: "", crossorigin: "" }
+      ];
+
+      scripts.forEach(({ src, integrity, crossorigin }) => {
+        const script = document.createElement("script");
+        script.src = src;
+        if (integrity) script.integrity = integrity;
+        if (crossorigin) script.crossOrigin = crossorigin;
+        document.body.appendChild(script);
+      });
+    })();
+  </script>
+
+
+</body>
+
+</html>
